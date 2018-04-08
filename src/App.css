@@ -9,7 +9,7 @@
 }
 nav {
   position: fixed;
-  margin: 3% 0 0 0;
+  margin: 1.5% 0 0 0;
   display: flex;
   width: 100vw;
 }
@@ -29,7 +29,7 @@ nav ul {
 nav li {
   padding: 5px;
 }
-nav li:hover {
+nav a:hover {
   cursor: pointer;
   color: blue;
 }
@@ -56,6 +56,13 @@ nav li:hover {
 .subtext {
   font-family: "Open Sans", sans-serif;
   margin: 0 0 30px 0;
+  line-height: 27px;
+  font-size: 18px;
+  max-width: 500px;
+}
+.subtext2 {
+  font-family: "Open Sans", sans-serif;
+  margin: 88% 0 0 45%;
   line-height: 27px;
   font-size: 18px;
   max-width: 500px;
@@ -113,6 +120,27 @@ margin: 35% 0 0 20%
 .contact-box li{
   padding: 5px 0;
 }
+.extra-box{
+  font-family: "Open Sans", sans-serif;  
+  color: black;
+  max-width: 70%;
+  margin: 16% 0 0 15%;
+}
+.infoBox{
+  padding: 20px 0;
+}
+.bluetext{
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 0 15px 0;
+}
+.subtext3 {
+
+  line-height: 27px;
+  font-size: 18px;
+  max-width: 500px;
+}
 .c {
   background: green;
   grid-column: 2;
@@ -125,8 +153,13 @@ margin: 35% 0 0 20%
   grid-row: 3;
 }
 .e {
+  background: lightgrey;  
   color: black;
-
   grid-column: 2;
   grid-row: 3;
+}
+.p{
+  background: lightgrey;
+  grid-column: 2;
+  grid-row: 2;
 }
