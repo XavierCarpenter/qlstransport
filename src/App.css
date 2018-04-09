@@ -6,6 +6,7 @@
   background-color: #fff;
   color: blue;
   height: 300vh;
+
 }
 nav {
   position: fixed;
@@ -145,6 +146,7 @@ margin: 35% 0 0 20%
   background: green;
   grid-column: 2;
   grid-row: 2;
+  
 }
 .d {
   background: yellow;
@@ -163,3 +165,4 @@ margin: 35% 0 0 20%
   grid-column: 2;
   grid-row: 2;
 }
+@media on screen

@@ -19,14 +19,22 @@ class App extends Component {
     return <div className="App">
         <nav>
           <ul>
-            <li><a href="#about">About Us</a></li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
             <li>|</li>
-            <li><a>Apply Now</a></li>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank">
+                Apply Now
+              </a>
+            </li>
             <li>|</li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li>
+              <a href="#contact">Contact Us</a>
+            </li>
           </ul>
         </nav>
-        <div className="box intro" >
+        <div className="box intro">
           <div className="title-box">
             <h1 className="big-text">DESIGNED TO RESPOND</h1>
             <h1 className="big-text">BUILT TO DELIVER</h1>
@@ -103,9 +111,9 @@ class App extends Component {
               <p className="subtext3 bold">
                 Call us today for more details at 855-578-7226.
               </p>
-              <button onClick={() => this.learnActive()} className="btn btn2">
+              <button onClick={() => this.learnActive()} className="btn btn2"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank">
                 Apply Now
-              </button>
+              </a></button>
               <button onClick={() => this.backActive()} className="btn btn2">
                 Back
               </button>
