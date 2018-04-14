@@ -24,7 +24,7 @@ class App extends Component {
             </li>
             <li>|</li>
             <li>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                 Apply Now
               </a>
             </li>
@@ -53,7 +53,7 @@ class App extends Component {
             <h1 className="big-text">OPERATORS</h1>
           </div>
           <div className="sub-box">
-            <p className="subtext">
+            <p className="subtext ">
               <span className="bold">
                 With Landstar, you’re in control.
               </span>
@@ -64,7 +64,7 @@ class App extends Component {
             </button>
           </div>
         </div>
-        {this.state.learn == false ? <div className="box c">
+        {this.state.learn === false ? <div className="box c" id="changeHeader">
             <div className="sub-box">
               <p className="subtext2">
                 Landstar gives you the freedom to succeed on your own terms
@@ -111,20 +111,22 @@ class App extends Component {
               <p className="subtext3 bold">
                 Call us today for more details at 855-578-7226.
               </p>
-              <button onClick={() => this.learnActive()} className="btn btn2"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank">
-                Apply Now
-              </a></button>
-              <button onClick={() => this.backActive()} className="btn btn2">
+              <button onClick={() => this.learnActive()} className="btn btnApply">
+                {" "}
+                <a className="btn3a" href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+                  Apply Now
+                </a>
+              </button>
+              <button onClick={() => this.backActive()} className="btn btn3">
                 Back
               </button>
             </div>
           </div>}
-        <div className="box d" id="contact">
-          <div className="title-box">
-            <h1 className="big-text">CONTACT</h1>
-          </div>
-        </div>
+        <div className="box d" id="contact" />
         <div className="box e">
+          <div className="title-box">
+            <h1 className="big-text contact">CONTACT</h1>
+          </div>
           <div className="info-wrapper">
             <div className="name-box">
               <h2>QLS Transport – Corporate Headquarters/Dallas</h2>
