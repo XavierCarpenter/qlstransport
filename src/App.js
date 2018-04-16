@@ -42,7 +42,7 @@ class App extends Component {
           <div className="sub-box">
             <p className="subtext">
               A Safety First Transportation Solutions Provider. This is
-              Landstar.
+              QLS Transport.
             </p>
             <button className="btn btn1">Contact Us</button>
           </div>
@@ -55,7 +55,7 @@ class App extends Component {
           <div className="sub-box">
             <p className="subtext ">
               <span className="bold">
-                With Landstar, you’re in control.
+                With QLS Transport, you’re in control.
               </span>
               You decide what and when to haul and our advanced technology ensures you're only a click away from the right choice for you. You've never known freedom like this before.
             </p>
@@ -67,7 +67,7 @@ class App extends Component {
         {this.state.learn === false ? <div className="box c" id="changeHeader">
             <div className="sub-box">
               <p className="subtext2">
-                Landstar gives you the freedom to succeed on your own terms
+                QLS Transport gives you the freedom to succeed on your own terms
                 without any blood, sweat or tears. Explore our interactive
                 diagram to find out more.
               </p>
@@ -77,14 +77,14 @@ class App extends Component {
               <div className="infoBox">
                 <p className="subtext3">
                   <span className="bold">
-                    With Landstar, you can grow your business
+                    With QLS Transport, you can grow your business
                   </span> on your own terms. You choose the loads that meet your business needs. You go home when you want and head back out when you’re ready, plus with Landstar’s percentage pay, as rates go up, so do your settlements.
                 </p>
               </div>
               <div className="infoBox">
                 <h2 className="bluetext">FREEDOM: BE YOUR OWN BOSS</h2>
                 <p className="subtext3">
-                  With Landstar you are your own boss, you choose what you
+                  With QLS Transport you are your own boss, you choose what you
                   want to haul, when to haul and when to return home. We
                   won't get in your way.
                 </p>
@@ -103,7 +103,7 @@ class App extends Component {
                   SUPPORT: WE’LL HELP YOU ALL THE WAY
                 </h2>
                 <p className="subtext3">
-                  Landstar is committed to your success. We'll help you get
+                  QLS Transport is committed to your success. We'll help you get
                   to where you're going - because that helps us get to where
                   we're going.
                 </p>
@@ -128,17 +128,14 @@ class App extends Component {
             <h1 className="big-text contact">CONTACT</h1>
           </div>
           <div className="info-wrapper">
-            <div className="name-box">
-              <h2>QLS Transport – Corporate Headquarters/Dallas</h2>
-            </div>
-            <div className="contact-box">
-              <ul>
-                <li>13410 Sutton Park Drive, South</li>
-                <li>Jacksonville, Florida 32224</li>
-                <li>817-438-0865</li>
-                <li>natalieamos@qlstransport.com</li>
-              </ul>
-              <i class="fab fa-facebook-square" />
+            <div className="info-box">
+              <h2>Headquarters</h2>
+                <p>Dallas, Texas</p>
+                <h2>Phone</h2>
+                <p>817-438-0865</p>
+                <h2>Email</h2>
+                <p>natalieamos@qlstransport.com</p>
+          
             </div>
           </div>
         </div>
