@@ -36,8 +36,8 @@ class App extends Component {
         </nav>
         <div className="box intro">
           <div className="title-box">
-            <h1 className="big-text">QLS</h1>
-            <h1 className="big-text">TRANSPORT</h1>
+            <h1 className="big-text">DESIGNED TO RESPOND</h1>
+            <h1 className="big-text">BUILT TO DELIVER</h1>
           </div>
           <div className="sub-box">
             <p className="subtext">
