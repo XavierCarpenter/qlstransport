@@ -7,7 +7,10 @@ class App extends Component {
     super();
     this.state = {
       learn: false,
-      nav: false
+      nav: false,
+      name: "",
+      phone: "",
+      message: ""
     };
   }
   learnActive() {
@@ -23,6 +26,15 @@ class App extends Component {
     this.setState({ nav: false });
   }
   render() {
+    console.log(this.state.name);
+    console.log(this.state.phone);
+    console.log(this.state.message);
+
+    let subject = `${this.state.name} from my website`;
+    let body = `Hi,
+    ${this.state.message} 
+${this.state.name}
+    Phone:${this.state.phone} `
     return <div className="App">
       <nav>
         <ul>
@@ -90,7 +102,7 @@ class App extends Component {
         </div>
         <div className="sub-box">
           <p className="subtext ">
-          With QLS Transport, you can grow your business on your own terms. With no forced dispatch you have the freedom to choose the loads you want to haul, when to haul, and when to return home. You choose the loads that meet your business and personal needs and with QLS Transport’s percentage pay as load rates go up, so does your settlement. 
+            With QLS Transport, you can grow your business on your own terms. With no forced dispatch you have the freedom to choose the loads you want to haul, when to haul, and when to return home. You choose the loads that meet your business and personal needs and with QLS Transport’s percentage pay as load rates go up, so does your settlement.
             </p>
           <button onClick={() => this.learnActive()} className="btn btn2">
             Learn More
@@ -187,19 +199,41 @@ class App extends Component {
       </div>
       {/* <div className="box contactPic" /> */}
       <div className="box contact" id="contact">
-        <div className="title-box" id="contact-title-box">
-          <h1 className="big-text " id="cTitle">Get In Touch</h1>
+        <div id="contact-title-box">
+          <h1>Get In Touch</h1>
         </div>
         <div className="info-wrapper">
           <div className="info-box">
-            <h2>Headquarters</h2>
+            <h1>Send Us A Message</h1>
+            <form action="xavier.carpenter16@gmail.com" method="post">
+              <input type="text" name="name" required placeholder="Name" onChange={e => this.setState(
+                { name: e.target.value }
+              )} />
+              <input type="email" name="email" required placeholder="Email" />
+              <input type="text" name="phone" required placeholder="Phone" onChange={e => this.setState(
+                { phone: e.target.value }
+              )} />
+              <textarea name="message" rows="10" placeholder="Message" onChange={e => this.setState(
+                { message: e.target.value }
+              )} />
+
+              <a className="submit"
+                href={`mailto:contact@qlstransport.com?&subject=${subject}&body=${body}`}
+              >
+                Email Us
+              </a>
+            </form>
+          </div>
+          <div className="contact-box">
+            <h2>Contact info</h2>
             <p>Dallas, Texas</p>
             <h2>Phone</h2>
-            <p>817-438-086</p>
+            <p>817-438-0869</p>
             <h2>Email</h2>
             <p>natalieamos@qlstransport.com</p>
           </div>
         </div>
+
       </div>
     </div>;
   }
