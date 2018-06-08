@@ -195,7 +195,7 @@ class App extends Component {
             <h2>Headquarters</h2>
             <p>Dallas, Texas</p>
             <h2>Phone</h2>
-            <p>817-438-0865</p>
+            <p>817-438-086</p>
             <h2>Email</h2>
             <p>natalieamos@qlstransport.com</p>
           </div>
