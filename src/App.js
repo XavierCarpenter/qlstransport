@@ -119,7 +119,7 @@ ${this.state.name}
           <div className="extra-box">
             <div className="infoBox">
               <p className="subtext3">
-                QLS Transport LLC was founded on over 20 years of combined experience in the trucking and logistics industry. We take pride in going the extra mile in providing on-time deliveries, exceptional customer service, and a safe, stable and profitable working environment for our drivers. With dedication to our customers and drivers at the forefront of everything we do, we have built a foundation of excellence that drives our success now and into the future.
+                <span className="bold">QLS Transport LLC</span> was founded on over 20 years of combined experience in the trucking and logistics industry. We take pride in going the extra mile in providing on-time deliveries, exceptional customer service, and a safe, stable and profitable working environment for our drivers. With dedication to our customers and drivers at the forefront of everything we do, we have built a foundation of excellence that drives our success now and into the future.
                 </p>
             </div>
             <div className="infoBox">
@@ -138,9 +138,9 @@ ${this.state.name}
             <p className="subtext3 bold">
               Call us today for more details at 855-578-7226.
               </p>
-            <button onClick={() => this.learnActive()} className="btn btnApply">
+            <button onClick={() => this.learnActive()} className="btn btn1">
               {" "}
-              <a className="btn3a" href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+              <a  href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                 Apply Now
                 </a>
             </button>
@@ -153,43 +153,27 @@ ${this.state.name}
         <div className="extra-box">
           <div className="infoBox">
             <p className="subtext3">
-              <span className="bold">
-                With QLS Transport, you can grow your business
-                  </span> on your own terms. You choose the loads that meet your business needs. You go home when you want and head back out when you’re ready, plus with Landstar’s percentage pay, as rates go up, so do your settlements.
+              QLS Transport LLC was founded on over 20 years of combined experience in the trucking and logistics industry. We take pride in going the extra mile in providing on-time deliveries, exceptional customer service, and a safe, stable and profitable working environment for our drivers. With dedication to our customers and drivers at the forefront of everything we do, we have built a foundation of excellence that drives our success now and into the future.
                 </p>
           </div>
           <div className="infoBox">
-            <h2 className="bluetext">FREEDOM: BE YOUR OWN BOSS</h2>
-            <p className="subtext3">
-              With QLS Transport you are your own boss, you choose what
-                  you want to haul, when to haul and when to return home. We
-                  won't get in your way.
-                </p>
+            <h2 className="bluetext">Contracting with QLS Transport</h2>
+            <ul className="benefits">
+              <li>No forced dispatch</li>
+              <li>Choose what you want to haul, when to haul, and when to return home</li>
+              <li>No touch local and over-the-road deliveries </li>
+              <li>Percentage based compensation plan </li>
+              <li>Weekly pay</li>
+              <li>Discounts on fuel</li>
+              <li>Discounts on tires and service work performed at preferred service centers</li>
+            </ul>
           </div>
-          <div className="infoBox">
-            <h2 className="bluetext">
-              SECURITY: YOU'LL ALWAYS BE IN DEMAND
-                </h2>
-            <p className="subtext3">
-              There are thousands of loads available every day. There's
-                  always something waiting for you.
-                </p>
-          </div>
-          <div className="infoBox">
-            <h2 className="bluetext">
-              SUPPORT: WE’LL HELP YOU ALL THE WAY
-                </h2>
-            <p className="subtext3">
-              QLS Transport is committed to your success. We'll help you
-                  get to where you're going - because that helps us get to
-                  where we're going.
-                </p>
-          </div>
+
           <p className="subtext3 bold">
             Call us today for more details at 855-578-7226.
               </p>
           <h2 onClick={() => this.learnActive()} >
-            {" "}
+          
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
               Apply Now
                 </a>
@@ -226,12 +210,15 @@ ${this.state.name}
           </div>
           <div className="contact-box">
             <h2>Contact Information</h2>
+            <i class="fas fa-location-arrow"></i>
             <p>6105 Denton Hwy, Suite 50
 Haltom City, TX 76244</p>
-
-            <p>817-676-6846</p>
-            <p>817-438-8009</p>
-
+            <div className="Numbers">
+              <i class="fas fa-phone"></i>
+              <p>817-676-6846</p>
+              <p>817-438-8009</p>
+            </div>
+            <i class="fas fa-envelope-open"></i>
             <p>contact@qlstransport.com</p>
           </div>
         </div>
