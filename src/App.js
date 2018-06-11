@@ -217,20 +217,22 @@ ${this.state.name}
                 { message: e.target.value }
               )} />
 
-              <a className="submit"
-                href={`mailto:contact@qlstransport.com?&subject=${subject}&body=${body}`}
-              >
-                Email Us
-              </a>
             </form>
+            <a className="submit"
+              href={`mailto:contact@qlstransport.com?&subject=${subject}&body=${body}`}
+            >
+              Email Us
+              </a>
           </div>
           <div className="contact-box">
-            <h2>Contact info</h2>
-            <p>Dallas, Texas</p>
-            <h2>Phone</h2>
-            <p>817-438-0869</p>
-            <h2>Email</h2>
-            <p>natalieamos@qlstransport.com</p>
+            <h2>Contact Information</h2>
+            <p>6105 Denton Hwy, Suite 50
+Haltom City, TX 76244</p>
+
+            <p>817-676-6846</p>
+            <p>817-438-8009</p>
+
+            <p>contact@qlstransport.com</p>
           </div>
         </div>
 

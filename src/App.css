@@ -15,6 +15,8 @@ nav {
   margin: 1.5% 0 0 0;
   display: flex;
   width: 100vw;
+  z-index:30;
+  
 }
 nav ul {
   font-family: "Open Sans", sans-serif;
@@ -27,7 +29,7 @@ nav ul {
   flex-direction: row;
   justify-content: flex-end;
   margin: 20px 0 0 70%;
-  z-index: 3000;
+  z-index:30;
 }
 
 nav li {
@@ -252,6 +254,10 @@ box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
   width: 100vw;
   z-index: 0
 }
+#contact-title-box h1{
+  font-size: 3em;
+  margin: 5% 0 0 5%;
+}
 .contact {
   background: #fff;
   background-size:cover;
@@ -261,6 +267,18 @@ box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
   height: 100vh;
   grid-column: 1 ;
   grid-row: 3;
+}
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact-box h2{
+  margin: 20px 0 20px 0;
+}
+.contact-box p{
+  margin: 20px 0 20px 0;
 }
 #cTitle{
   position: absolute;
@@ -283,7 +301,7 @@ input[type="text"], input[type="email"], textarea{
   width: 80%;
   background: transparent;
   border: none;
-  border-bottom: 2px solid #3A90F5;
+  border-bottom: 2px solid rgb(93, 106, 133);
   margin: 0 auto;
   font-size: 18px;
   text-transform: uppercase;
@@ -306,11 +324,18 @@ button[type="submit"]{
 
 }
 .submit{
-  color: black;
+  color: white;
+  background: #0D3FA2;
+  border: 1px solid #0D3FA2;
+  padding: 10px;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1200px){
+  .App{
+    overflow-x: hidden;
+overflow-y: hidden;
+  }
 .pMobile{
   display: none;
 }
@@ -422,18 +447,7 @@ margin: auto;
    
   
 }
-.btn {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 25.5px;
-  width: 50vw;
-  height: 55px;
-  -webkit-border-radius: 34px;
-  -moz-border-radius: 34px;
-  border-radius: 34px;
-  letter-spacing: 8px;
-}
+
 .btn2{
   display: none;
 }
