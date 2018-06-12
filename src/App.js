@@ -118,7 +118,7 @@ ${this.state.name}
       </div> : <div className="box about3">
           <div className="extra-box">
             <div className="infoBox">
-              <p className="subtext3">
+              <p className="subtext3 history">
                 <span className="bold">QLS Transport LLC</span> was founded on over 20 years of combined experience in the trucking and logistics industry. We take pride in going the extra mile in providing on-time deliveries, exceptional customer service, and a safe, stable and profitable working environment for our drivers. With dedication to our customers and drivers at the forefront of everything we do, we have built a foundation of excellence that drives our success now and into the future.
                 </p>
             </div>
@@ -197,7 +197,7 @@ ${this.state.name}
               <input type="text" name="phone" required placeholder="Phone" onChange={e => this.setState(
                 { phone: e.target.value }
               )} />
-              <textarea name="message" rows="10" placeholder="Message" onChange={e => this.setState(
+              <textarea name="message" rows="8" placeholder="Message" onChange={e => this.setState(
                 { message: e.target.value }
               )} />
 
