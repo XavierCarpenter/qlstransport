@@ -197,7 +197,7 @@ ${this.state.name}
               <input type="text" name="phone" required placeholder="Phone" onChange={e => this.setState(
                 { phone: e.target.value }
               )} />
-              <textarea name="message" rows="6" placeholder="Message" onChange={e => this.setState(
+              <textarea name="message" rows="5" placeholder="Message" onChange={e => this.setState(
                 { message: e.target.value }
               )} />
 
