@@ -140,7 +140,7 @@ ${this.state.name}
               </p>
             <button onClick={() => this.learnActive()} className="btn btn1">
               {" "}
-              <a  href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                 Apply Now
                 </a>
             </button>
@@ -173,7 +173,7 @@ ${this.state.name}
             Call us today for more details at 855-578-7226.
               </p>
           <h2 onClick={() => this.learnActive()} >
-          
+
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSecrAMb603zUDU73IxPmUBSDGVkaBj6bBC1_3Sb_k_Cf5aEyQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
               Apply Now
                 </a>
@@ -183,47 +183,48 @@ ${this.state.name}
       </div>
       {/* <div className="box contactPic" /> */}
       <div className="box contact" id="contact">
-        <div id="contact-title-box">
-          <h1>Get In Touch</h1>
-        </div>
-        <div className="info-wrapper">
-          <div className="info-box">
-            <h1>Send Us A Message</h1>
-            <form action="xavier.carpenter16@gmail.com" method="post">
-              <input type="text" name="name" required placeholder="Name" onChange={e => this.setState(
+        <div className="form-container">
+          <h1>Send Us A Message</h1>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Name*</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe" onChange={e => this.setState(
                 { name: e.target.value }
               )} />
-              <input type="email" name="email" required placeholder="Email" />
-              <input type="text" name="phone" required placeholder="Phone" onChange={e => this.setState(
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Phone*</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="555-555-5555" onChange={e => this.setState(
                 { phone: e.target.value }
               )} />
-              <textarea name="message" rows="5" placeholder="Message" onChange={e => this.setState(
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Email</label>
+              <input type="email" class="form-control" id="exampleInputPassword1" placeholder="name@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message*</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" onChange={e => this.setState(
                 { message: e.target.value }
-              )} />
-
-            </form>
+              )}></textarea>
+            </div>
             <a className="submit"
               href={`mailto:contact@qlstransport.com?&subject=${subject}&body=${body}`}
-            >
-              Email Us
-              </a>
-          </div>
-          <div className="contact-box">
-            <h2>Contact Information</h2>
-            <i class="fas fa-location-arrow"></i>
-            <p>6105 Denton Hwy, Suite 50
-Haltom City, TX 76244</p>
-            <div className="Numbers">
-              <i class="fas fa-phone"></i>
-              <p>817-676-6846</p>
-              <p>817-438-8009</p>
-            </div>
-            <i class="fas fa-envelope-open"></i>
-            <p>contact@qlstransport.com</p>
-          </div>
+            ><button type="submit" class="btn btn-primary">Submit</button>      </a>
+          </form>
         </div>
-
+        <div className="contact-box">
+          <h2>Contact Information</h2>
+          <ul className="contact-list">
+            <li>6105 Denton Hwy, Suite 50
+Haltom City, TX 76244</li>
+            <li>817-676-6846 or
+            817-438-8009</li>
+            <li>contact@qlstransport.com</li>
+          </ul>
+        </div>
       </div>
+
     </div>;
   }
 }
