@@ -80,7 +80,7 @@ nav a:hover {
   background: rgb(0, 0, 0, .4);  
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  margin: 80% auto;
+  margin: 60% auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@ nav a:hover {
   color: #fff;
 }
 .btn {
- padding: 1em 2.1em 1.1em;
+ padding: 10px 15px;
     border-radius: 3px;
     margin: 8px 8px 8px 8px;
     color: #fbdedb;
@@ -172,7 +172,7 @@ nav a:hover {
 .benefits{
    list-style-type: disc;
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 35px;   
 }
 .info-wrapper {
@@ -235,7 +235,7 @@ box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
 .subtext3 {
   font-family: "Open Sans", sans-serif;  
   line-height: 27px;
-  font-size: 20px;
+  font-size: 16px;
   max-width: 500px;
 }
 .contact{
@@ -547,3 +547,10 @@ input[type="text"], input[type="email"], textarea{
 
 
 } 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+  .App {
+background: green;
+
+}
+}
