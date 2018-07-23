@@ -3,9 +3,9 @@
   display: grid;
   grid-template-columns: 50vw 50vw;
   grid-template-rows: 100vh 100vh;
-  background-color: #fff;
+  background-color: #660066;
   color: #0D3FA2;
-  /* height: 300vh; */
+  height: 310vh;
 overflow-x: hidden;
 overflow-y: hidden;
 
@@ -481,7 +481,8 @@ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 }
 
 .form-container h1{
-  font-size: 24px
+  font-size: 24px;
+
 }
 .contact-box{
   display: flex;
